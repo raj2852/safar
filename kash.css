@@ -1,0 +1,50 @@
+body
+{
+	margin: 0;
+	padding: 0;
+}
+.container
+{
+	position: relative;
+	width: 90%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-rows: auto;
+	grid-gap: 0 40px;
+}
+.container .box
+{
+	position: relative;
+	height: 440px;
+	display: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #fff
+}
+.content
+{
+	position: relative;
+	padding: 20px;
+}
+.content h4
+{
+	position: absolute;
+	top: -60px;
+	right: 20px;
+	margin: 0;
+	padding: 0;
+	font-size: 2em;
+	color: #fff;
+	transition: 0.5s;
+}
+.box:hover .content h4
+{
+	top: -140px;
+}
+.box .content p
+{
+	margin: 0;
+	padding: 0;
+	font-size: 16px; 
+}
