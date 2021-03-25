@@ -1,0 +1,83 @@
+body
+{
+	margin: 0;
+	padding: 0;
+}
+.arrow{
+	color: #fff;
+	z-index: 2;
+	animation: MoveUpDown 5s linear infinite;
+	margin-top: 30%;
+}
+@keyframes MoveUpDown{
+	0%, 100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-40px);
+	}
+}
+button{
+	height: 30px;
+	width: 250px;
+	border-radius: 10px;
+	border-color: #fff;
+	background-color: #fff;
+	color: #ee5425;
+}
+.container
+{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background: linear-gradient(-45deg, #ee5425, #e71364, #089acf, #0bcea0);
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-rows: auto;
+	grid-gap: 0 40px;
+	padding-bottom: 30px;
+	padding-top: 50px;
+}
+.container .box
+{
+	position: relative;
+	height: 440px;
+	display: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #fff;
+	margin: 10px;
+	box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+	background: rgba(255,255,255,0.2);
+	border-radius: 10px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+	border-left: 1px solid rgba(255,255,255,0.5);
+	backdrop-filter: blur(5px);
+}
+.content
+{
+	position: relative;
+	padding: 10px;
+	color: #fff;
+}
+.content h4
+{
+	position: absolute;
+	top: -80px;
+	margin: 0;
+	padding: 0;
+	font-size: 2em;
+	color: #fff;
+	transition: 0.5s;
+}
+.box:hover .content h4
+{
+	top: -95px;
+}
+.box .content p
+{
+	margin: 0;
+	padding: 0;
+	font-size: 16px; 
+}
